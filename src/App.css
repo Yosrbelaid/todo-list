@@ -1,38 +1,171 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/027/231/618/non_2x/illustration-graphic-of-aesthetic-background-template-with-subtle-pastel-colors-and-nature-motifs-vector.jpg'); /* Pretty background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+
 .App {
   text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: rgba(4, 4, 4, 0.395);
+  border-radius: 10px;
+  width: 80%;
+  margin: 50px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+h2 {
+  color: #fbb259;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+button {
+  background-color: #f74f84;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button:hover {
+  background-color: #febc5a;
+}
+
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 1.1rem;
+}
+
+th {
+  background-color: #f5cc9a;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+td {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  font-size: 1.1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+tr.done {
+  background-color: #a5d6a7; 
+}
+
+tr.not-done {
+  background-color: #f8bbd0; 
+}
+
+button.success {
+  background-color: #4caf50; 
+}
+
+button.warning {
+  background-color: #f7c881; 
+}
+
+button:hover {
+  background-color: #ff4d53;
+}
+
+
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  background-color: #f1cda1;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background-color: #f6d19a;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+li span {
+  flex: 1;
+}
+
+li button {
+  background-color: #83f087;
+  margin-left: 10px;
+}
+
+li.done {
+  background-color: #a5d6a7; 
+}
+
+li.not-done {
+  background-color: #f8bbd0; 
+}
+
+button.add-task {
+  background-color: #bf976c; 
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button.add-task:hover {
+  background-color: #febc5a; 
+}
+
+button.warning {
+  background-color: #ea5b60; 
+}
+
+button.warning:hover {
+  background-color: #ff1f28; 
 }
